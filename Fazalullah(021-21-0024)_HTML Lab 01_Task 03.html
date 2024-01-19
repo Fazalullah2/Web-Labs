@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazalullah Soomro - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6; 
+        }
+
+        header {
+            background-color: #4285f4; 
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #6d9eeb; 
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4285f4; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color: #fff;">Fazalullah</h1>
+        <p><a href="asattar.bscsses21@iba-suk.edu.pk" style="color: #bbb;">fazalullah.bscsses21@iba-suk.edu.pk</a></p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#classes">Classes</a>
+        <a href="#interests">Interests</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! my name is fazal from shikarpur, i am a student at sukkur iba studying computer science, now i am in 7th
+            semester practicing web</p>
+    </section>
+
+    <section id="classes">
+        <h2>Classes</h2>
+        <!-- Subordinate Pages -->
+        <ul>
+            <li><a href="#task3">Task 3 Markup</a></li>
+            <li><a href="#task4">Task 4 Spreadsheets</a></li>
+            <li><a href="#task5">Task 5 Relational Databases</a></li>
+            <li><a href="#task6">Task 6 Presentational Graphics</a></li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <!-- Content about your interests -->
+        <p>I have an interest in mobile application development and web app development to integrate real-world
+            problems into smart software tools easily accessible to everyone.</p>
+    </section>
+
+    <footer>
+        Last updated on <time id="current-time"></time>
+    </footer>
+
+    <script>
+        function updateTime() {
+            const currentTimeElement = document.getElementById('current-time');
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
+            const formattedTime = now.toLocaleDateString('en-US', options);
+            currentTimeElement.textContent = formattedTime;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+
+</body>
+
+</html>
